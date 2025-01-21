@@ -1,0 +1,91 @@
+.contact-container {
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Space between map and form */
+    padding: 100px;
+    max-width: auto;
+    margin: auto auto;
+  }
+  
+  .map-section {
+    flex: auto; /* Take up equal space */
+  }
+  
+  .form-section {
+    flex: auto; /* Take up equal space */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stack map and form vertically */
+        gap: 20px; /* Space between stacked elements */
+    }
+
+    .map-section, .form-section {
+        flex: none; /* Remove equal space sharing */
+        width: 100%; /* Take full width on small screens */
+    }
+
+    .form-section {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-section {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+
+    .form-group input {
+        font-size: 14px; /* Reduce input font size for smaller screens */
+        padding: 8px; /* Adjust input padding */
+    }
+
+    .submit-button {
+        font-size: 14px; /* Reduce button font size */
+        padding: 8px; /* Adjust button padding */
+    }
+}

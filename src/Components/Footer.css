@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .footer-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer-text {
+    margin: 0;
+    text-align: center;
+    flex: 1; /* Center text using flex */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    color: black;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: #007BFF; /* Change color on hover */
+  }
+  

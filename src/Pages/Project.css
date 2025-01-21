@@ -1,0 +1,36 @@
+.project-container {
+  display: flex;
+
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px;
+}
+
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project-item {
+  flex: 1;
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  /* For smaller screens, make the items stack vertically */
+  .project-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-item {
+    width: 100%;
+  }
+}
