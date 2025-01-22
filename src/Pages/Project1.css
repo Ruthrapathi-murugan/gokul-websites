@@ -1,0 +1,46 @@
+.project1-container {
+  margin-top: 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .project1-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .project1-text {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #333;
+  }
+  
+  .project1-photos {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .project1-photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .project1-row {
+      flex-direction: column;
+    }
+  
+    .project1-photos {
+      grid-template-columns: 1fr;
+    }
+  }
+  

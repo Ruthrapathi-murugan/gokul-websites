@@ -20,10 +20,10 @@ const Contact = () => {
 
       {/* Contact Form Section */}
       <div className="form-section">
-        <h2>Contact Us</h2>
+     
         <form>
           <div className="form-group">
-            <label htmlFor="firstName">First Name</label>
+            <label htmlFor="firstName">First Name*</label>
             <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" />
           </div>
           <div className="form-group">
@@ -31,17 +31,38 @@ const Contact = () => {
             <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email*</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" />
           </div>
           <div className="form-group">
-            <label htmlFor="phone">Phone</label>
+            <label htmlFor="phone">Phone*</label>
             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
           </div>
           <button type="submit" className="submit-button">Submit</button>
         </form>
       </div>
+      
     </div>
+    <footer className="footer-section">
+    <div className="footer-info">
+          <p> ADDRESS </p>
+          <p>1234 Street Name, City, State, ZIP</p>
+          </div>
+          <div className="footer-info">
+          <p>CONTACT</p>
+           <p>(123) 456-7890 </p>
+            <p>email@example.com</p>
+        </div>
+       <div className="footer-menu">
+        <p>MENU</p>
+      
+          <a href="home">Home</a>
+          <a href="studio">Studio</a>
+          <a href="projects">Projects</a>
+          <a href="contact">Contact</a>
+        </div>
+        
+      </footer>
     </>
   );
 };

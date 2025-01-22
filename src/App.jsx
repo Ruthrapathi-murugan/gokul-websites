@@ -8,6 +8,8 @@ import Header from './Components/Header'; // Import the Header component
 import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
 import Project from './Pages/Project';
+import Project1 from './Pages/Project1';
+import WhatsAppButton from './Components/WhatsAppButton';
 
 function App() {
   const [isVideoFinished, setIsVideoFinished] = useState(false);
@@ -31,6 +33,7 @@ function App() {
       <div>
         {/* Header with Navbar rendered on all pages */}
         <Header />
+        <WhatsAppButton />
         
         {/* Only show the video on initial load (if not marked as played in sessionStorage) */}
         {!isVideoFinished ? (
@@ -42,7 +45,7 @@ function App() {
             <Route path="/studio" element={<Studio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/project" element={<Project />} />
-
+            <Route path="/project1" element={<Project1 />} />
           </Routes>
         )}
         

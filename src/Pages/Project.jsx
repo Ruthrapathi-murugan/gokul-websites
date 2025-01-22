@@ -6,8 +6,7 @@ import image3 from '../assets/project3.jpg';
 import image4 from '../assets/project4.jpg';
 import image5 from '../assets/project5.jpg';
 import image6 from '../assets/project6.jpg';
-import { BiSpaceBar } from 'react-icons/bi';
-
+import { Link } from 'react-router-dom'; 
 const Project = () => {
   return (
     <>
@@ -17,7 +16,9 @@ const Project = () => {
       {/* Row 1: 1 image */}
       <div className="project-row">
         <div className="project-item">
-          <img src={image1} alt="Project 1" />
+        <Link to="/project1"> {/* Use Link to navigate */}
+            <img src={image1} alt="Project 1" />
+          </Link>
         </div>
       </div>
 

@@ -1,83 +1,116 @@
-
 .contact-container {
+  position: relative; /* Establish a relative position for the container */
   margin-top: 100px;
-    display: flex; /* Use flexbox for layout */
-    gap: 20px; /* Space between map and form */
-    padding: 50px;
-    max-width: auto;
- 
-  }
-  
-  .map-section {
-    flex: auto; /* Take up equal space */
-  }
-  
-  .form-section {
-    flex: auto; /* Take up equal space */
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .form-group input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .submit-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-button:hover {
-    background-color: #0056b3;
-  }
-  
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .contact-container {
-        flex-direction: column; /* Stack map and form vertically */
-        gap: 20px; /* Space between stacked elements */
-    }
-
-    .map-section, .form-section {
-        flex: none; /* Remove equal space sharing */
-        width: 100%; /* Take full width on small screens */
-    }
-
-    .form-section {
-        padding: 15px; /* Reduce padding for smaller screens */
-    }
+  display: flex;
+  flex-direction: column; /* Stack the form on top of the map */
+  padding: 40px;
 }
+
+.map-section {
+  width: 100%; /* Full width for the map */
+  height: 400px; /* Fixed height for the map */
+}
+
+.form-section {
+  position: absolute; /* Position the form on top of the map */
+  top: 20px; /* Add some spacing from the top of the map */
+  left: 70%; /* Center the form horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  width: 80%; /* Adjust the width of the form */
+  max-width: 500px; /* Limit the maximum width */
+  background-color: white; /* Add a background for better readability */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Ensure the form is above the map */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #131414;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section */
+/* Footer Section */
+.footer-section {
+  background-color: #ffffff;
+  color: #1d1a1a;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Space out the sections */
+  text-align: left; /* Align text to the left */
+}
+
+.footer-info,
+.footer-menu {
+  flex: 1; /* Each section takes up equal width */
+  margin: 0 10px; /* Add spacing between sections */
+}
+
+
+.footer-info p,
+.footer-menu p,
+.footer-menu a {
+  margin: 5px 0; /* Add spacing between items */
+}
+
+.footer-menu a {
+  color: #161515;
+  text-decoration: none;
+  
+  transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+  color: #007BFF;
+}
+
+.footer-menu p {
+  font-size: 16px;
+  
+  margin-bottom: 10px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+      /* Center items horizontally */
+  margin-bottom: 15px;
+}
+
 
 @media screen and (max-width: 480px) {
     .form-section {
+      display: flex;
+      flex-direction: column;
         padding: 10px; /* Further reduce padding for very small screens */
     }
 
@@ -86,8 +119,16 @@
         padding: 8px; /* Adjust input padding */
     }
 
+   
     .submit-button {
         font-size: 14px; /* Reduce button font size */
         padding: 8px; /* Adjust button padding */
     }
+    .footer-section{
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 }
+
