@@ -1,9 +1,11 @@
+
 .contact-container {
+  margin-top: 100px;
     display: flex; /* Use flexbox for layout */
     gap: 20px; /* Space between map and form */
-    padding: 100px;
+    padding: 50px;
     max-width: auto;
-    margin: auto auto;
+ 
   }
   
   .map-section {

@@ -3,6 +3,7 @@ import './Contact.css';
 
 const Contact = () => {
   return (
+    <>
     <div className="contact-container">
       {/* Map Section */}
       <div className="map-section">
@@ -41,6 +42,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

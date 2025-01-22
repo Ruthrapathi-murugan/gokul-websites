@@ -10,7 +10,11 @@ html, body {
     height: 100%;
 }
 
-
+nav img.logo:hover {
+    opacity: 1; /* Restore full opacity on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover for interactivity */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
 
 .header-img {
     width: 100%;
@@ -35,7 +39,7 @@ nav {
 }
 
 nav img.logo {
-    height: 50px;
+    height: 100px;
 }
 
 .nav-links {
@@ -69,12 +73,16 @@ nav img.logo {
     cursor: pointer;
 }
 
+.menu-toggle {
+    display: none; /* Hide the toggle button by default */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(243, 235, 235, 0.8);
         position: absolute;
         top: 70px;
         right: 0;
@@ -86,7 +94,7 @@ nav img.logo {
     .nav-links.show {
         display: flex;
     }
-
+    
     .menu-toggle {
         display: block;
     }

@@ -1,4 +1,9 @@
 .project-container {
+  margin-top: 100px; /* Adjust the value as needed for the space */
+  padding: 20px; /* Optional: Add padding inside the container */
+}
+
+.project-container {
   display: flex;
 
   flex-direction: column;
@@ -14,6 +19,12 @@
 
 .project-item {
   flex: 1;
+}
+.project-item img:hover {
+
+  opacity: 1; /* Restore full opacity on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover for interactivity */
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .project-item img {

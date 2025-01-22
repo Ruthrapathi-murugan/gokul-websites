@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css'; // Import the CSS file for header styles
 import headerImage from '../assets/home.jpg';
-import logo from '../assets/DMA logo.jpg';
+import logo from '../assets/Final logo.jpg';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

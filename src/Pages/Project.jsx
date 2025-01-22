@@ -6,12 +6,14 @@ import image3 from '../assets/project3.jpg';
 import image4 from '../assets/project4.jpg';
 import image5 from '../assets/project5.jpg';
 import image6 from '../assets/project6.jpg';
+import { BiSpaceBar } from 'react-icons/bi';
 
 const Project = () => {
   return (
     <>
-    <h1 style={{padding:"50px",textAlign:"center"}}>Latest Projects</h1>
     <div className="project-container">
+    <h1 style={{padding:"50px",textAlign:"center"}}>Latest Projects</h1>
+
       {/* Row 1: 1 image */}
       <div className="project-row">
         <div className="project-item">
