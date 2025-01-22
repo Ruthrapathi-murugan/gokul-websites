@@ -28,6 +28,17 @@
 }
 
 .project-item img {
+  width: 100%; /* Ensures the image fits the container */
+  filter: grayscale(100%); /* Makes the image black-and-white */
+  transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.project-item img:hover {
+  filter: grayscale(0%); /* Restores the color */
+  transform: scale(1.05); /* Optional: Slightly zooms in the image */
+}
+
+.project-item img {
   width: 100%;
   height: auto;
   border-radius: 8px;
