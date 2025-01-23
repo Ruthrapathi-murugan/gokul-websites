@@ -37,10 +37,7 @@ const Project1 = () => {
             The architecture is deeply integrated with the environment, using natural materials and earth construction techniques, such as
             exposed brickwork, which seamlessly blend with the surroundings.
           </p>
-          <p>
-            The campus planning incorporates courtyards that address the local climate by facilitating natural ventilation and light,
-            making the structures energy-efficient and environmentally harmonious.
-          </p>
+         
         </div>
 
         {/* Photo Section */}

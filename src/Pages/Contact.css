@@ -4,17 +4,21 @@
   display: flex;
   flex-direction: column; /* Stack the form on top of the map */
   padding: 40px;
+  border-radius: 4px;
+
 }
 
 .map-section {
   width: 100%; /* Full width for the map */
   height: 400px; /* Fixed height for the map */
+  border-radius: 10px;
+
 }
 
 .form-section {
   position: absolute; /* Position the form on top of the map */
-  top: 20px; /* Add some spacing from the top of the map */
-  left: 70%; /* Center the form horizontally */
+  top: 10px; /* Add some spacing from the top of the map */
+  left: 50%; /* Center the form horizontally */
   transform: translateX(-50%); /* Adjust for centering */
   width: 80%; /* Adjust the width of the form */
   max-width: 500px; /* Limit the maximum width */
@@ -95,15 +99,14 @@
 
 .footer-menu p {
   font-size: 16px;
-  
+
   margin-bottom: 10px;
 }
-
 .footer-menu {
   display: flex;
   flex-direction: column; /* Arrange items in a column */
       /* Center items horizontally */
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 

@@ -22,6 +22,7 @@ const Contact = () => {
       <div className="form-section">
      
         <form>
+          <h1 style={{alignContent:"center",textAlign:"center"}}>Contact us</h1>
           <div className="form-group">
             <label htmlFor="firstName">First Name*</label>
             <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" />
