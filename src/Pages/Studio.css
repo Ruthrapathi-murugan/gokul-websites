@@ -73,7 +73,16 @@
     border-radius: 50%; /* Circular images */
     border: 2px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    filter: grayscale(100%); /* Convert image to black and white */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
+
+/* Optional: Add hover effect to revert to color */
+.team-item img:hover {
+    filter: grayscale(0%); /* Restore color on hover */
+    transform: scale(1.05); /* Slight zoom for interactivity */
+}
+
 
 .team-item p {
     margin-top: 10px;

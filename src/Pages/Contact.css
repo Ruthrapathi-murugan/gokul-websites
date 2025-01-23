@@ -18,7 +18,7 @@
 .form-section {
   position: absolute; /* Position the form on top of the map */
   top: 10px; /* Add some spacing from the top of the map */
-  left: 50%; /* Center the form horizontally */
+  left: 60%; /* Center the form horizontally */
   transform: translateX(-50%); /* Adjust for centering */
   width: 80%; /* Adjust the width of the form */
   max-width: 500px; /* Limit the maximum width */
