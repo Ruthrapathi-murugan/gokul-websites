@@ -4,6 +4,11 @@ import image11 from '../assets/projectpage2.jpg';
 import image21 from '../assets/projectpage2.jpg';
 import image31 from '../assets/projectpage3.jpg';
 import image41 from '../assets/projectpage4.jpg';
+import image51 from '../assets/projectpage2.jpg';
+import image61 from '../assets/projectpage2.jpg';
+import image71 from '../assets/projectpage3.jpg';
+import image81 from '../assets/projectpage4.jpg';
+
 
 
 const Project1 = () => {
@@ -44,6 +49,10 @@ const Project1 = () => {
           <img src={image21} alt="Project 2" />
           <img src={image31} alt="Project 3" />
           <img src={image41} alt="Project 4" />
+          <img src={image51} alt="Project 1" />
+          <img src={image61} alt="Project 2" />
+          <img src={image71} alt="Project 3" />
+          <img src={image81} alt="Project 4" />
           
         </div>
       </div>
