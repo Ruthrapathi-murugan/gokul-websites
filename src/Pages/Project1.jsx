@@ -43,13 +43,13 @@ const Project1 = () => {
         {/* Photo Section */}
         <div className="project1-photos">
           <img src={image11} alt="Project 1" />
-          <img src={image21} alt="Project 2" />
-          <img src={image31} alt="Project 3" />
-          <img src={image41} alt="Project 4" />
-          <img src={image51} alt="Project 1" />
-          <img src={image61} alt="Project 2" />
-          <img src={image71} alt="Project 3" />
-          <img src={image81} alt="Project 4" />
+          <img src={image11} alt="Project 2" />
+          <img src={image11} alt="Project 3" />
+          <img src={image11} alt="Project 4" />
+          <img src={image11} alt="Project 1" />
+          <img src={image11} alt="Project 2" />
+          <img src={image11} alt="Project 3" />
+          <img src={image11} alt="Project 4" />
           
         </div>
       </div>
