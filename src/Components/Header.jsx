@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Header.css'; // Import the CSS file for header styles
 import headerImage from '../assets/home.jpg';
 import logo from '../assets/Final logo.jpg';
-
+import { Link } from 'react-router-dom';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,7 +13,9 @@ const Header = () => {
     return (
         <header>
             <nav>
+            <Link to="/">
                 <img src={logo} alt="Logo" className="logo" />
+                </Link>
                 <button className="menu-toggle" onClick={toggleMenu}>
                     ☰
                 </button>

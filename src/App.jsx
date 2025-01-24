@@ -48,9 +48,9 @@ function App() {
             <Route path="/project1" element={<Project1 />} />
           </Routes>
         )}
-        
+             <Footer/>
       </div>
-      <Footer/>
+ 
     </Router>
   );
 }
